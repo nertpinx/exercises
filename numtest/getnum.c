@@ -13,6 +13,7 @@
  * touch the @value.
  */
 int
-get_number(const char *string, long *value)
+get_number(const char *string,
+           long *value)
 {
 }
