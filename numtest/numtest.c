@@ -18,7 +18,6 @@ struct test_data {
         printf("[ \e[31mFAIL\e[0m ]\n");                      \
         printf("The test \e[31m" fmt "\e[0m\n", __VA_ARGS__); \
         ret = EXIT_FAILURE;                                   \
-        continue;                                             \
     } while (0)
 
 #define DATA(x)      { #x, x, false }
