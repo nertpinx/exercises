@@ -3,7 +3,7 @@ PROGRAMS = numtest
 numtest_SOURCES = numtest.c getnum.c getnum.h
 numtest_LIBS =
 
-CFLAGS = -std=gnu11 -Wall -Werror
+CFLAGS = -Og -ggdb -std=gnu11 -Wall -Wextra -Wmissing-declarations -Werror
 
 .PHONY: all clean
 
