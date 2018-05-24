@@ -1,2 +1,5 @@
 /numtest/numtest
 *.o
+/GPATH
+/GRTAGS
+/GTAGS
