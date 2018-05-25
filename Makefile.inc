@@ -1,4 +1,4 @@
-CFLAGS = -Og -ggdb -std=gnu11 -Wall -Wextra -Wmissing-declarations -Werror
+CFLAGS ?= -Og -ggdb -std=gnu11 -Wall -Wextra -Wmissing-declarations -Werror
 
 .PHONY: all clean
 
