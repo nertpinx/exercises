@@ -1,4 +1,6 @@
 *.o
+*.swp
 /GPATH
 /GRTAGS
 /GTAGS
+tags
