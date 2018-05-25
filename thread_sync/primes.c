@@ -17,14 +17,14 @@
 unsigned long
 prime_get_nth(unsigned long n)
 {
-    size_t i;
+    unsigned long long i;
 
     /* The dumbest and possibly grossest way to calculate primes with even
      * dumber overflow protection. */
     n++;
 
     for (i = 2; n && i >= 2; i++) {
-        size_t j;
+        unsigned long long j;
 
         for (j = 2; j < i; j++) {
             if (i % j == 0)
