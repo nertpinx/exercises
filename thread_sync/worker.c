@@ -7,7 +7,7 @@
 
 struct worker_data {
     /* Feel free to modify the internals of this function as needed. */
-    unsigned long number;
+    unsigned long number;  /* number of primes to be summed up */
     unsigned long long result;
     unsigned long current;
 };
@@ -58,7 +58,9 @@ worker_data_cleanup_get_result(struct worker_data *worker_data)
  * @opaque: Pointer to initialized worker_data struct
  *
  * Function converts @string into @value if and only if it is valid (meaning the
- * string contains only the valid number, no excess characters).
+ * string contains only the valid number, no excess characters).  This function
+ * must be thread-safe as it will be called from multiple threads
+ * simultaneously.
  *
  * Returns NULL.
  */
